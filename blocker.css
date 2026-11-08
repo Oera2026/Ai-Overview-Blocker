@@ -1,0 +1,5 @@
+/* Hides the AI Overview before first paint. content.js handles the cases CSS cannot (Things to Know, AI Mode tab) and acts as fallback if Google's markup changes. The h3 guard stops this hiding a block that also holds organic results. */
+#rso > div:has([data-async-type="folsrch"], [id^="folsrch"]):not(:has(a[href] h3)),
+#rcnt > div:has([data-async-type="folsrch"], [id^="folsrch"]):not(:has(#rso, a[href] h3)) {
+  display: none;
+}

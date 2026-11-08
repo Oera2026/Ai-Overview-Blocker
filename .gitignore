@@ -1,0 +1,30 @@
+# Operating system junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE settings
+.vscode/
+.idea/
+*.swp
+
+# Claude Code / AI tooling (local only)
+.claude/
+graphify-out/
+CLAUDE.md
+
+# Build output and packaged extension files
+*.zip
+*.crx
+*.xpi
+*.pem
+dist/
+web-ext-artifacts/
+
+# Dependencies and logs
+node_modules/
+*.log
+
+# Secrets
+.env
+.env.*
